@@ -1,0 +1,52 @@
+header {
+	display: flex;
+	justify-content: center;
+}
+
+.hero {
+  padding-left: 64px;
+	background: #000;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  gap: 8px;
+	align-items: start;
+	width: 100vw;
+	height: 500px;
+	/* border-radius: 16px; */
+	background-image:
+		linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.7) 0%,
+			rgba(204, 204, 204, 0) 100%
+		),
+		url("../assets/hero.png");
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.headerOne {
+  text-align: left;
+  font-family: Playfair Display;
+  margin: 0;
+}
+
+.buttonCta {
+  background-color: #F7CB6C;
+  border: 2px solid #452001;
+  font-size: 20px;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-family: Playfair Display;
+  transition: .3s;
+}
+
+.buttonCta:hover {
+	color: #F7CB6C;
+	background-color: #452001;
+	border: 2px solid #F7CB6C;
+	transform: scale(.97);
+}

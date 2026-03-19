@@ -1,0 +1,33 @@
+.navigation {
+	/* max-width: 90%; */
+	padding: 16px 0;
+	width: 90vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.navElement {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	line-height: normal;
+}
+.navElementLogo {
+	width: 90%;
+	mix-blend-mode: multiply;
+}
+
+.footerStrip {
+	padding: 5px 0;
+	width: 100%;
+
+	background-color: #faf6f3;
+}
+
+.footerStrip p {
+	margin: 0;
+	color: #452001;
+}

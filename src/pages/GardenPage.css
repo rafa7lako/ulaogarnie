@@ -1,0 +1,193 @@
+header {
+	display: flex;
+	justify-content: center;
+}
+
+.hero__sub {
+	background: #000;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+	align-items: center;
+	width: 100vw;
+	height: 500px;
+	/* border-radius: 16px; */
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../assets/heroAlternative.png) center / cover no-repeat;
+
+	/* background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; */
+}
+
+.headerOne {
+	text-align: left;
+	font-family: Playfair Display;
+	margin: 0;
+}
+
+.buttonCta {
+	background-color: #f7cb6c;
+	border: 2px solid #452001;
+	font-size: 20px;
+	padding: 8px 32px;
+	border-radius: 8px;
+	font-family: Playfair Display;
+	transition: 0.3s;
+}
+
+.buttonCta:hover {
+	color: #f7cb6c;
+	background-color: #452001;
+	border: 2px solid #f7cb6c;
+	transform: scale(0.97);
+}
+
+.sectionOne__sub {
+	padding: 0 32px 64px;
+	flex-direction: column;
+}
+
+.headingTwoGroup {
+	width: 80%;
+}
+
+.headingTwo {
+	padding: 0 32px;
+	font-family: Playfair Display;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.fadeLine {
+	height: 2px; /* grubość linii */
+	width: 30%;
+}
+
+.fadeLineLeftDark {
+	background: linear-gradient(
+		to left,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.fadeLineRightDark {
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.gardenSubsection {
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	width: 80%;
+	text-align: left;
+}
+
+.gardenSubsection__text {
+	align-items: start;
+	flex-direction: column;
+}
+
+.sectionOneImg {
+	width: 60%;
+	border-radius: 16px;
+}
+
+.gardenSubHeadingTwo {
+	margin-top: 0;
+}
+
+.gardenSubList {
+	padding: 0;
+	margin: 0;
+}
+
+.sectionTwo {
+	padding: 0 32px 64px;
+	background-color: #026438;
+	color: #fffffd;
+}
+
+.headingTwo {
+	padding: 0 32px;
+	font-family: Playfair Display;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.fadeLine {
+	height: 2px; /* grubość linii */
+	width: 30%;
+}
+
+.fadeLineLeft {
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 253, 1) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+.fadeLineRight {
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 253, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.subSectionTwoText {
+	margin-bottom: 48px;
+}
+
+.subSectionTwoImg {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.subSectionTwoImg:hover {
+	scale: 1.02;
+}
+
+.sectionThree {
+	/* padding: 0 32px 64px; */
+	background-color: #f7cb6c;
+	color: #452001;
+}
+
+.headingThree {
+	padding: 0 16px;
+	font-family: Playfair Display;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.subSectionFourText {
+	font-family: Playfair Display;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.contactSubsectionContaner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
+.contactWomanImg {
+	height: 400px; /* albo % */
+	width: auto;
+}

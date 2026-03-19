@@ -1,0 +1,87 @@
+.card {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: end;
+	padding: 2rem;
+	height: 400px;
+	width: 350px;
+	background-color: #026438;
+	border-radius: 16px;
+	box-shadow:
+		0 10px 20px rgba(0, 0, 0, 0.12),
+		/* cień pod kartą */ 0 2px 4px rgba(0, 0, 0, 0.06); /* cień przy krawędzi */
+}
+
+.cardBg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1);
+	transition: transform 0.4s ease;
+	z-index: 0;
+}
+
+.card::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(239, 103, 60, 0.4);
+	z-index: 1;
+	pointer-events: none;
+	box-shadow:
+		inset 0 1px 2px rgba(255, 255, 255, 0.25),
+		/* lekki highlight */ inset 0 -6px 12px rgba(0, 0, 0, 0.08); /* głębia wewnątrz */
+}
+
+.card:hover .cardBg {
+	transform: scale(1.02);
+}
+
+.cardOne::after {
+	background: rgba(54, 121, 71, 0.4);
+}
+.cardTwo::after {
+	background: rgba(69, 32, 1, 0.4);
+}
+
+/* .card:hover {
+    background-size: 180%;
+}
+
+.cardOne {
+	background:
+  linear-gradient(rgba(54, 121, 71, 0.4), rgba(54, 121, 71, 0.4)),
+  url('../assets/hero.png') left / cover no-repeat;
+}
+
+.cardTwo {
+	background:
+  linear-gradient(rgba(69, 32, 1, 0.4), rgba(69, 32, 1, 0.4)),
+  url('../assets/friedhoff.png') center / cover no-repeat;
+}
+
+.cardThree {
+	background:
+  linear-gradient(rgba(239, 103, 60, 0.4), rgba(239, 103, 60, 0.4)),
+  url('../assets/granmaRoom.png') right / cover no-repeat;
+} */
+
+.cardBtn {
+	padding: 16px;
+	width: 100%;
+	border-radius: 16px;
+	background-color: #ffffff;
+	transition: 0.3s;
+	z-index: 2;
+	border: 2px solid #452001;
+	box-shadow:
+		0 10px 20px rgba(0, 0, 0, 0.12),
+		/* cień pod kartą */ 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.cardBtn:hover {
+	transform: scale(0.97);
+}

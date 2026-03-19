@@ -1,0 +1,22 @@
+.fadeLine {
+	height: 2px;
+	width: 30%;
+}
+
+/* ciemne linie */
+.fadeLineLeftDark {
+	background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.fadeLineRightDark {
+	background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/* jasne linie */
+.fadeLineLeft {
+	background: linear-gradient(to left, rgba(255,255,253,1), rgba(255,255,255,0));
+}
+
+.fadeLineRight {
+	background: linear-gradient(to right, rgba(255,255,253,1), rgba(0,0,0,0));
+}

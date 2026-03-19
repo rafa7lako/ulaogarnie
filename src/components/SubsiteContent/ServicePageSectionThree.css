@@ -1,0 +1,29 @@
+.sectionThree {
+	background-color: #f7cb6c;
+	color: #452001;
+}
+
+.headingThree {
+	padding: 0 16px;
+	font-family: Playfair Display;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.subSectionFourText {
+	font-family: Playfair Display;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.contactSubsectionContaner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
+.contactWomanImg {
+	height: 400px;
+	width: auto;
+}

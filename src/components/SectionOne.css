@@ -1,0 +1,43 @@
+.sectionOne {
+	padding: 0 32px 64px;
+}
+
+.headingTwo {
+  padding: 0 32px;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.fadeLine {
+  height: 2px;          /* grubość linii */
+  width: 30%;
+  
+}
+
+.fadeLineLeftDark{
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.fadeLineRightDark {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.cardsServices {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+  
+}
+
+
+

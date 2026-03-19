@@ -1,0 +1,76 @@
+.footer {
+	padding: 96px 64px;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../assets/gardenFooter.jpg) center / cover no-repeat;
+	color: #fffffd;
+	box-shadow:
+		inset 0 4px 10px rgba(255, 255, 255, 0.15),
+		/* lekki highlight */ inset 0 -6px 12px rgba(0, 0, 0, 0.08); /* głębia wewnątrz */
+	box-shadow:
+		0 -10px 20px rgba(0, 0, 0, 0.12),
+		/* cień pod kartą */ 0 -2px 4px rgba(0, 0, 0, 0.06); /* cień przy krawędzi */
+}
+
+.fadeLineFoot {
+	height: 2px; /* grubość linii */
+	width: 100%;
+}
+
+.fadeLineLeftFoot {
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 253, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.fadeLineRightFoot {
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 253, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.headerThree {
+	color: #fffffd;
+	font-family: Playfair Display;
+	padding: 0 16px;
+}
+
+.iconGeneral {
+	color: #fffffd;
+	padding: 4px;
+}
+
+.smIcon {
+	font-size: 32px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.smIcon:hover {
+	color: #d7d7d7;
+	transform: scale(0.9);
+}
+
+.footerSectionOne {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.uoLogoFooter {
+	width: 300px;
+	border-radius: 100px;
+}
+
+.footerSectionTwo {
+	width: 70%;
+}
+
+.footerSectionTwoB {
+	gap: 3rem;
+}

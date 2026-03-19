@@ -1,0 +1,164 @@
+.ucMain {
+	display: flex;
+	/* height: 75vh; */
+	padding: 64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fffffd;
+	gap: 1rem;
+}
+
+/* Logo */
+.navElementLogo {
+	width: 5%;
+	mix-blend-mode: multiply;
+	max-width: 80px; /* prevent it from being too large on big screens */
+}
+
+/* Main window */
+.ucWindow {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 96px 320px 96px 32px;
+	background:
+		linear-gradient(
+			to right,
+			rgba(54, 121, 71, 0.8) 60%,
+			rgba(54, 121, 71, 0) 80%
+		),
+		url("../assets/underContructionImg.jpg") left / cover no-repeat;
+	border-radius: 32px;
+	text-align: left;
+}
+
+.ucWindow h1 {
+	font-family: "Playfair Display", serif;
+	margin: 0 0 1rem 0;
+	font-size: 3rem;
+}
+
+.ucWindow p {
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+/* Icons */
+.ucIcons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.ucIcon {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.5rem;
+}
+
+.iconGeneral {
+	font-size: 24px;
+}
+
+.cennik {
+	width: 60%;
+}
+
+/* MEDIA QUERIES */
+
+/* Large tablets / small desktops */
+@media (max-width: 1200px) {
+	.ucWindow {
+		padding: 64px 64px 64px 32px;
+		border-radius: 24px;
+        background:
+			linear-gradient(
+				to right,
+				rgba(54, 121, 71, 0.8) 60%,
+				rgba(54, 121, 71, 0) 150%
+			),
+			url("../assets/underContructionImg.jpg") center / cover no-repeat;
+	}
+	.ucWindow h1 {
+		font-size: 2.5rem;
+	}
+	.ucWindow p {
+		font-size: 18px;
+	}
+
+	.cennik {
+		width: 80%;
+	}
+}
+
+/* Tablets / portrait mode */
+@media (max-width: 900px) {
+	.ucMain {
+		padding: 48px 24px;
+	}
+	.navElementLogo {
+		width: 8%;
+	}
+	.ucWindow {
+		padding: 48px 32px;
+		border-radius: 20px;
+	}
+	.ucWindow h1 {
+		font-size: 2rem;
+	}
+	.ucWindow p {
+		font-size: 16px;
+	}
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+	.ucMain {
+		padding: 32px 16px;
+		height: auto;
+	}
+	.navElementLogo {
+		width: 30%;
+	}
+	.ucWindow {
+		justify-content: center;
+		align-items: center;
+		padding: 40px 24px;
+		border-radius: 16px;
+		background:
+			linear-gradient(
+				to bottom,
+				rgba(54, 121, 71, 0.8) 60%,
+				rgba(54, 121, 71, 0) 150%
+			),
+			url("../assets/underContructionImg.jpg") center / cover no-repeat;
+	}
+	.ucWindow h1 {
+		font-size: 1.5rem;
+	}
+	.ucWindow p {
+		font-size: 12px;
+		text-align: center;
+	}
+	.ucIcons {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.ucIcon {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.iconGeneral {
+		font-size: 20px;
+	}
+
+	.cennik {
+		width: 90%;
+	}
+}
