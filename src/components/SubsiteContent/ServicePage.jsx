@@ -10,9 +10,21 @@ export const ServicePage = ({ data }) => {
 		<>
 			<ServicePageHeader {...data.headerSection} />
 			<main>
-				<ServicePageSectionOne {...data.sectionOne} />
-				<ServicePageSectionTwo {...data.sectionTwo} />
-				<ServicePageSectionThree {...data.sectionThree} />
+				{data.sections.map((section, i) => {
+					switch (section.type) {
+						case "one":
+							return <ServicePageSectionOne key={section.id} {...section} />;
+
+						case "two":
+							return <ServicePageSectionTwo key={section.id} {...section} />;
+
+						case "three":
+							return <ServicePageSectionThree key={section.id} {...section} />;
+
+						default:
+							return null;
+					}
+				})}
 			</main>
 		</>
 	);

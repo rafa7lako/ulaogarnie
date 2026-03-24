@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import Navigation from "../components/Navigation.jsx";
 import { Footer } from "../components/Footer.jsx";
 
@@ -7,14 +7,14 @@ import sectionTwoImg1 from "../assets/garden-imgs/garden__img-two.jpeg";
 import sectionTwoImg2 from "../assets/garden-imgs/garden__img-three.jpeg";
 import contactWomanImg from "../assets/contactWomanImg.png";
 import { ServicePage } from "../components/SubsiteContent/ServicePage.jsx";
-import heroImage from "../assets/heroAlternative.png";
+import heroImage from "../assets/granmaRoom.png";
 
-const gardenData = {
+const seniorData = {
 	headerSection: {
 		bgImage: heroImage,
-		title: "Zieleń, którą chce się oglądać",
+		title: "Pomoc w codziennych sprawach",
 		subText:
-			"Nie masz czasu na regularne koszenie? Trawnik stracił formę? Rabaty wymagają uporządkowania? Ula Ogarnie.",
+			"Nie wszystko trzeba robić samemu. Czasem wystarczy ktoś zaufany, kto pomoże.",
 	},
 	sections: [
 		{
@@ -22,20 +22,20 @@ const gardenData = {
 			type: "one",
 			title: "Oferta",
 			img: sectionOneImg,
-			heading: "Oferuję kompleksową pielęgnację...",
+			heading: "Oferuję wsparcie domowe i pomoc osobom starszym:",
 			list: [
-				"koszenie trawników",
-				"nawożenie",
-				"przycinanie",
-				"nasadzenia",
-				"porządki",
+				"sprzątanie i mycie okien",
+				"porządkowanie mieszkania",
+				"drobne naprawy domowe",
+				"pomoc przy zakupach",
+				"organizację dokumentów",
 			],
 		},
 		{
 			id: "section-offer-cont",
 			type: "two",
-			title: "Zielono. Równo. Na czas.",
-			text: "Pracuję terminowo, dokładnie i bez chaosu. Każde zlecenie wyceniam uczciwie i indywidualnie.",
+			title: "Spokojna głowa dla Ciebie i Twoich bliskich.",
+			text: "Bez pośpiechu. Bez oceniania. To nie jest opieka medyczna To zwykła, ludzka pomoc.",
 			images: [sectionOneImg, sectionTwoImg1, sectionTwoImg2],
 		},
 		{
@@ -50,17 +50,17 @@ const gardenData = {
 	],
 };
 
-export const GardenPage = () => {
-	return (
-		<>
+export const SeniorPage = () => {
+  return (
+    	<>
 			<div className="container">
 				<div className="topStripe"></div>
 				<Navigation />
 			</div>
 
-			<ServicePage data={gardenData} />
+			<ServicePage data={seniorData} />
 
 			<Footer />
 		</>
-	);
-};
+  )
+}
