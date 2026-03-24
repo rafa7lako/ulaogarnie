@@ -1,3 +1,4 @@
+/* ---------- Footer base ---------- */
 .footer {
 	padding: 96px 64px;
 	background:
@@ -6,14 +7,70 @@
 	color: #fffffd;
 	box-shadow:
 		inset 0 4px 10px rgba(255, 255, 255, 0.15),
-		/* lekki highlight */ inset 0 -6px 12px rgba(0, 0, 0, 0.08); /* głębia wewnątrz */
-	box-shadow:
+		inset 0 -6px 12px rgba(0, 0, 0, 0.08),
 		0 -10px 20px rgba(0, 0, 0, 0.12),
-		/* cień pod kartą */ 0 -2px 4px rgba(0, 0, 0, 0.06); /* cień przy krawędzi */
+		0 -2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.flexRowFooter {
+	display: flex;
+	gap: 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+/* ---------- Logo ---------- */
+.footerSectionOne {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logoBbFooter {
+	background: #fffffd;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.uoLogoFooter {
+	width: 90%;
+	height: auto;
+	border-radius: 50%;
+}
+
+/* ---------- Contact section ---------- */
+.footerSectionTwo {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.footerSectionTwo .flex {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footerSectionTwoB {
+	display: flex;
+	gap: 3rem;
+	flex-wrap: wrap;
+}
+
+.headerThree {
+	color: #fffffd;
+	font-family: Playfair Display;
+	padding: 0 16px;
 }
 
 .fadeLineFoot {
-	height: 2px; /* grubość linii */
+	height: 2px;
 	width: 100%;
 }
 
@@ -33,12 +90,7 @@
 	);
 }
 
-.headerThree {
-	color: #fffffd;
-	font-family: Playfair Display;
-	padding: 0 16px;
-}
-
+/* ---------- Icons ---------- */
 .iconGeneral {
 	color: #fffffd;
 	padding: 4px;
@@ -55,22 +107,68 @@
 	transform: scale(0.9);
 }
 
-.footerSectionOne {
-	width: 500px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+
+/* ---------------- Responsive ---------------- */
+
+/* Tablety: szerokość <= 1024px */
+@media (max-width: 1024px) {
+	.footer {
+		padding: 64px 32px;
+	}
+	.footerSectionTwo {
+		width: 100%;
+	}
+	.footerSectionTwoB {
+		gap: 2rem;
+		justify-content: center;
+	}
 }
 
-.uoLogoFooter {
-	width: 300px;
-	border-radius: 100px;
+/* Telefony: szerokość <= 768px */
+@media (max-width: 768px) {
+	.flexRow {
+		
+		align-items: center;
+		gap: 2rem;
+	}
+	.footerSectionTwo {
+		align-items: center;
+		text-align: center;
+	}
+	.footerSectionTwoB {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.logoBbFooter {
+		width: 150px;
+		height: 150px;
+	}
+	.uoLogoFooter {
+		width: 80%;
+	}
+	.smIcon {
+		font-size: 28px;
+	}
 }
 
-.footerSectionTwo {
-	width: 70%;
-}
-
-.footerSectionTwoB {
-	gap: 3rem;
+/* Małe telefony: szerokość <= 480px */
+@media (max-width: 480px) {
+	.footer {
+		padding: 48px 16px;
+	}
+	.logoBbFooter {
+		width: 120px;
+		height: 120px;
+	}
+	.uoLogoFooter {
+		width: 75%;
+	}
+	.smIcon {
+		font-size: 24px;
+	}
+	.headerThree {
+		font-size: 18px;
+		padding: 0 8px;
+	}
 }

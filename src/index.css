@@ -10,6 +10,9 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	--duration: 48s; /* zmieniasz tylko to */
+	--items: 8;
 }
 
 ul {
@@ -74,11 +77,6 @@ button:focus-visible {
 	align-items: center;
 }
 
-.topStripe {
-	height: 35px;
-	width: 100%;
-	background: #026438;
-}
 
 @media (prefers-color-scheme: light) {
 	:root {

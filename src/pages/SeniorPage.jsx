@@ -1,6 +1,5 @@
 import React from 'react'
-import Navigation from "../components/Navigation.jsx";
-import { Footer } from "../components/Footer.jsx";
+
 
 import sectionOneImg from "../assets/garden-imgs/garden__img-one.jpeg";
 import sectionTwoImg1 from "../assets/garden-imgs/garden__img-two.jpeg";
@@ -53,14 +52,11 @@ const seniorData = {
 export const SeniorPage = () => {
   return (
     	<>
-			<div className="container">
-				<div className="topStripe"></div>
-				<Navigation />
-			</div>
+			
 
 			<ServicePage data={seniorData} />
 
-			<Footer />
+		
 		</>
   )
 }

@@ -2,15 +2,12 @@ import React from "react";
 import "./SectionTwo.css";
 import imgOne from '../assets/garden-imgs/garden__img-one.jpeg'
 import imgTwo from '../assets/garden-imgs/garden__img-two.jpeg'
+import { SectionHeader } from "./SectionHeader";
 
 export const SectionTwo = () => {
 	return (
 		<section className="sectionTwo__home flexColumn">
-			<div className="flexRow">
-				<div className="fadeLine fadeLineLeft"></div>
-				<h2 className="headingTwo">Doświadczenie</h2>
-				<div className="fadeLine fadeLineRight"></div>
-			</div>
+			<SectionHeader title="Doświadczenie" theme="light" />
 			<div className="sectionTwoContainer__home flex">
 				<div className="photoCollage">
           <img className="sectionTwoImg__home sectionTwoImg1" src={imgOne} alt="" />

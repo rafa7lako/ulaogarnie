@@ -1,0 +1,98 @@
+.flexRowSectionHeader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem; /* odstęp między linią a nagłówkiem */
+	
+}
+
+.fadeLine {
+	height: 2px;
+	width: 30%;
+}
+
+/* jasne */
+.fadeLineLeft {
+	background: linear-gradient(
+		to left,
+		rgba(255, 255, 253, 1) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+.fadeLineRight {
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 253, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+/* ciemne */
+.fadeLineLeftDark {
+	background: linear-gradient(
+		to left,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.fadeLineRightDark {
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+
+.headingTwo {
+	padding: 0 32px;
+	font-family: Playfair Display;
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Tablety: szerokość <= 1024px */
+@media (max-width: 1024px) {
+	.flexRowSectionHeader {
+		gap: 0.8rem;
+	}
+	.fadeLine {
+		width: 25%;
+	}
+	.headingTwo {
+		font-size: 30px;
+		padding: 0 16px;
+	}
+}
+
+/* Telefony: szerokość <= 768px */
+@media (max-width: 768px) {
+	.flexRowSectionHeader {
+		gap: 0.6rem;
+	}
+	.fadeLine {
+		width: 20%;
+	}
+	.headingTwo {
+		font-size: 24px;
+		padding: 0 8px;
+	}
+}
+
+/* Małe telefony: szerokość <= 480px */
+@media (max-width: 480px) {
+	.flexRowSectionHeader {
+		gap: 0.5rem;
+	}
+	.fadeLine {
+		display: none;
+	}
+	.headingTwo {
+		font-size: 20px;
+		padding: 0 4px;
+	}
+}

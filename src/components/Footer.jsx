@@ -5,46 +5,60 @@ import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
 import ulaogarnieLogo from "../assets/ulaogarnieLogo.svg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
 	return (
-		<><footer className="footer">
-			<div className="flexRow">
-				<div className="footerSectionOne">
-					<img
-						className="uoLogoFooter"
-						src={ulaogarnieLogo}
-						alt="logo ulaogarnia.pl"
-					/>
-				</div>
-				<div className="footerSectionTwo">
-					<div className="flex">
-						<div className="fadeLineFoot fadeLineLeftFoot"></div>
-						<h3 className="headerThree">Kontakt</h3>
-						<div className="fadeLineFoot fadeLineRightFoot"></div>
+		<>
+			<footer className="footer">
+				<div className="flexRowFooter">
+					<div className="footerSectionOne">
+						<Link to='/home' className="logoBbFooter flex">
+							<img
+								className="uoLogoFooter"
+								src={ulaogarnieLogo}
+								alt="logo ulaogarnia.pl"
+							/>
+						</Link>
 					</div>
-					<div className="flex footerSectionTwoB">
+					<div className="footerSectionTwo">
 						<div className="flex">
-							<FontAwesomeIcon className="iconGeneral contactIcon" icon={faPhone} />
-							<p>+48 725 116 511</p>
+							<div className="fadeLineFoot fadeLineLeftFoot"></div>
+							<h3 className="headerThree">Kontakt</h3>
+							<div className="fadeLineFoot fadeLineRightFoot"></div>
 						</div>
-						<div className="flex">
-							<FontAwesomeIcon className="iconGeneral contactIcon" icon={faEnvelope} />
-							<p>u.jendral@gmail.com</p>
-						</div>
-						<div>
-							<FontAwesomeIcon className="iconGeneral smIcon" icon={faFacebook} />
-							<FontAwesomeIcon className="iconGeneral smIcon" icon={faSquareInstagram} />
+						<div className="flex footerSectionTwoB">
+							<div className="flex">
+								<FontAwesomeIcon
+									className="iconGeneral contactIcon"
+									icon={faPhone}
+								/>
+								<p>+48 725 116 511</p>
+							</div>
+							<div className="flex">
+								<FontAwesomeIcon
+									className="iconGeneral contactIcon"
+									icon={faEnvelope}
+								/>
+								<p>u.jendral@gmail.com</p>
+							</div>
+							<div>
+								<FontAwesomeIcon
+									className="iconGeneral smIcon"
+									icon={faFacebook}
+								/>
+								<FontAwesomeIcon
+									className="iconGeneral smIcon"
+									icon={faSquareInstagram}
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
+			</footer>
+			<div className="footerStrip flex">
+				<p>@2026</p>
 			</div>
-			
-		</footer>
-		<div className="footerStrip flex">
-			<p>@2026</p>
-		</div>
 		</>
-		
 	);
 };

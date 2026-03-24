@@ -1,22 +1,25 @@
 import React from "react";
 import ulaogarnieLogo from "../assets/ulaogarnieLogo.svg";
 import "./Navigation.css";
+import { Link } from "react-router-dom";
+
 
 const Navigation = () => {
 	return (
 		<nav className="navigation">
 			<div className="navElement">
-				<a>pielęgnacja ogrodu</a>
-				<a>opieka nad miejscami pamięci</a>
-				<a>pomoc seniorom</a>
+				<Link to="/garden">pielęgnacja ogrodu</Link>
+				<Link to="/memorial">opieka nad miejscami pamięci</Link>
+				<Link to="/senior">pomoc seniorom</Link>
 			</div>
 			<div className="navElementLogo">
-				<img src={ulaogarnieLogo} alt="logo ulaogarnia.pl" />
+				<Link to="/home"><img src={ulaogarnieLogo} alt="logo ulaogarnia.pl" /></Link>
+				
 			</div>
 			<div className="navElement">
-				<a>o nas</a>
-				<a>cennik</a>
-				<a>kontakt</a>
+				<Link>o mnie</Link>
+				<Link>cennik</Link>
+				<Link>kontakt</Link>
 			</div>
 		</nav>
 	);

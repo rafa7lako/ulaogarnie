@@ -3,13 +3,11 @@
 	background-color: #026438;
 	color: #fffffd;
 }
-
 .sectionTwoContainer__home {
 	padding-top: 16px;
 	gap: 3rem;
 	align-items: center;
 }
-
 .photoCollage {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -18,7 +16,6 @@
 	max-width: 500px;
 	flex: 1;
 }
-
 .sectionTwoImg__home {
 	width: 100%;
 	height: 100%;
@@ -27,93 +24,30 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-
 .sectionTwoImg__home:hover {
 	scale: 1.02;
 }
-
 .sectionTwoImg1 {
 	grid-column: span 3;
 	aspect-ratio: 16 / 9;
 }
-
 .sectionTwoImg2,
 .sectionTwoImg3,
 .sectionTwoImg4 {
 	aspect-ratio: 1 / 1;
 }
-
 .sectionTwoText {
 	text-align: left;
 	flex: 1.2;
 	max-width: 600px;
 }
 
-.headingTwo {
-	padding: 0 32px;
-	font-family: Playfair Display;
-	font-size: 36px;
-	font-weight: normal;
-}
 
-.fadeLine {
-	height: 2px; /* grubość linii */
-	width: 30%;
-}
-
-.fadeLineLeft {
-	background: linear-gradient(
-		to left,
-		rgba(255, 255, 253, 1) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-}
-
-.fadeLineRight {
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 253, 1) 0%,
-		rgba(0, 0, 0, 0) 100%
-	);
-}
-
-.cardsServices {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 2rem;
-}
-
-.card {
-	display: flex;
-	align-items: end;
-	padding: 2rem;
-	height: 400px;
-	width: 350px;
-	background-color: #026438;
-	border-radius: 16px;
-}
-
-.cardOne {
-	background:
-		linear-gradient(rgba(54, 121, 71, 0.4), rgba(54, 121, 71, 0.4)),
-		url("../assets/hero.png") left / cover no-repeat;
-}
-
-.cardTwo {
-	background:
-		linear-gradient(rgba(69, 32, 1, 0.4), rgba(69, 32, 1, 0.4)),
-		url("../assets/friedhoff.png") center / cover no-repeat;
-}
-
-.cardThree {
-	background:
-		linear-gradient(rgba(239, 103, 60, 0.4), rgba(239, 103, 60, 0.4)),
-		url("../assets/granmaRoom.png") right / cover no-repeat;
-}
-
-.cardBtn {
-	padding: 16px;
-	width: 100%;
-	background-color: #ffffff;
+@media (max-width: 768px) {
+	.sectionTwoContainer__home {
+		flex-direction: column;
+	}
+	.photoCollage {
+		width: 90%;
+	}
 }

@@ -1,52 +1,118 @@
 header {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
+/* Hero section */
 .hero {
   padding-left: 64px;
-	background: #000;
-	color: #ffffff;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  padding-right: 16px;
+  background: #000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 8px;
-	align-items: start;
-	width: 100vw;
-	height: 500px;
-	/* border-radius: 16px; */
-	background-image:
-		linear-gradient(
-			to right,
-			rgba(0, 0, 0, 0.7) 0%,
-			rgba(204, 204, 204, 0) 100%
-		),
-		url("../assets/hero.png");
-
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  align-items: flex-start;
+  width: 100vw;
+  height: 500px;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(204, 204, 204, 0) 100%
+    ),
+    url("../assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* Headings */
 .headerOne {
   text-align: left;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   margin: 0;
+  font-size: 48px;
+  line-height: 1.2;
 }
 
+/* CTA button */
 .buttonCta {
   background-color: #F7CB6C;
   border: 2px solid #452001;
   font-size: 20px;
   padding: 8px 32px;
   border-radius: 8px;
-  font-family: Playfair Display;
-  transition: .3s;
+  font-family: 'Playfair Display', serif;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .buttonCta:hover {
-	color: #F7CB6C;
-	background-color: #452001;
-	border: 2px solid #F7CB6C;
-	transform: scale(.97);
+  color: #F7CB6C;
+  background-color: #452001;
+  border: 2px solid #F7CB6C;
+  transform: scale(0.97);
+}
+
+/* ---------------- Responsive ---------------- */
+
+/* Tablety: szerokość <= 1024px */
+@media (max-width: 1024px) {
+  .hero {
+    padding-left: 32px;
+    height: 400px;
+  }
+
+  .headerOne {
+    font-size: 36px;
+  }
+
+  .buttonCta {
+    font-size: 18px;
+    padding: 6px 24px;
+  }
+}
+
+/* Telefony: szerokość <= 768px */
+@media (max-width: 768px) {
+	
+  .hero {
+	align-items: center;
+    padding-left: 16px;
+    height: 300px;
+    gap: 6px;
+	 background-image:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6) 100%,
+      rgba(204, 204, 204, 0) 100%
+    ),
+    url("../assets/hero.png");
+  }
+
+  .headerOne {
+	text-align: center;
+    font-size: 28px;
+  }
+
+  .buttonCta {
+    font-size: 16px;
+    padding: 12px 56px;
+  }
+}
+
+/* Małe telefony: szerokość <= 480px */
+@media (max-width: 480px) {
+  .hero {
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 250px;
+    gap: 4px;
+  }
+
+
+
+
 }

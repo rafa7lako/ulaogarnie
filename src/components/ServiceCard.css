@@ -2,15 +2,21 @@
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	align-items: end;
-	padding: 2rem;
-	height: 400px;
-	width: 350px;
+	justify-content: center; /* poziomo na środku */
+	align-items: center;    /* pionowo na środku */
+	width: 100%;
+	/* max-width: 350px; */
+	min-height: 300px;
 	background-color: #026438;
 	border-radius: 16px;
 	box-shadow:
 		0 10px 20px rgba(0, 0, 0, 0.12),
-		/* cień pod kartą */ 0 2px 4px rgba(0, 0, 0, 0.06); /* cień przy krawędzi */
+		0 2px 4px rgba(0, 0, 0, 0.06);
+	text-decoration: none;
+	color: #fff;          /* kolor czystego tekstu */
+	z-index: 1;
+	cursor: pointer;       /* wskazuje, że karta jest klikalna */
+	text-align: center;
 }
 
 .cardBg {
@@ -28,12 +34,12 @@
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: rgba(239, 103, 60, 0.4);
+	background: rgba(239, 103, 60, 0.6); /* overlay */
 	z-index: 1;
 	pointer-events: none;
 	box-shadow:
 		inset 0 1px 2px rgba(255, 255, 255, 0.25),
-		/* lekki highlight */ inset 0 -6px 12px rgba(0, 0, 0, 0.08); /* głębia wewnątrz */
+		inset 0 -6px 12px rgba(0, 0, 0, 0.08);
 }
 
 .card:hover .cardBg {
@@ -41,47 +47,36 @@
 }
 
 .cardOne::after {
-	background: rgba(54, 121, 71, 0.4);
+	background: rgba(54, 121, 71, 0.6);
 }
+
 .cardTwo::after {
-	background: rgba(69, 32, 1, 0.4);
+	background: rgba(69, 32, 1, 0.6);
 }
 
-/* .card:hover {
-    background-size: 180%;
+.cardText {
+	position: relative; /* nad overlay */
+	z-index: 2;         /* nad obrazem i pseudo-elementem */
+	font-family: Playfair Display;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #fff;        /* można zmienić na kontrastujący */
+	text-align: center;
+	line-height: 1.2;
+	text-shadow: 0 5px 15px rgb(0, 0, 0);
 }
 
-.cardOne {
-	background:
-  linear-gradient(rgba(54, 121, 71, 0.4), rgba(54, 121, 71, 0.4)),
-  url('../assets/hero.png') left / cover no-repeat;
+@media (max-width: 1024px) {
+	.card { height: 350px; }
+	.cardText { font-size: 1.3rem; }
 }
 
-.cardTwo {
-	background:
-  linear-gradient(rgba(69, 32, 1, 0.4), rgba(69, 32, 1, 0.4)),
-  url('../assets/friedhoff.png') center / cover no-repeat;
+@media (max-width: 768px) {
+	.card { height: 300px; }
+	.cardText { font-size: 1.1rem; }
 }
 
-.cardThree {
-	background:
-  linear-gradient(rgba(239, 103, 60, 0.4), rgba(239, 103, 60, 0.4)),
-  url('../assets/granmaRoom.png') right / cover no-repeat;
-} */
-
-.cardBtn {
-	padding: 16px;
-	width: 100%;
-	border-radius: 16px;
-	background-color: #ffffff;
-	transition: 0.3s;
-	z-index: 2;
-	border: 2px solid #452001;
-	box-shadow:
-		0 10px 20px rgba(0, 0, 0, 0.12),
-		/* cień pod kartą */ 0 2px 4px rgba(0, 0, 0, 0.06);
-}
-
-.cardBtn:hover {
-	transform: scale(0.97);
+@media (max-width: 480px) {
+	.card { width: 90%; max-width: 100%; height: auto; }
+	.cardText { font-size: 1rem; }
 }

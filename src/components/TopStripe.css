@@ -1,0 +1,53 @@
+.topStripe {
+	height: 35px;
+	width: 100%;
+	background: #026438;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+
+	/* opcjonalny fade */
+	mask-image: linear-gradient(
+		to right,
+		transparent,
+		black 15%,
+		black 85%,
+		transparent
+	);
+}
+
+/* 🔥 RUCH W PRAWO */
+@keyframes scrollRight {
+	to {
+		left: 100%;
+	}
+}
+
+.item {
+	position: absolute;
+	left: -300px; /* start poza ekranem z lewej */
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.768);
+	white-space: nowrap;
+	font-size: 14px;
+
+	animation: scrollRight var(--duration) linear infinite;
+}
+
+/* 🔧 równy spacing w czasie */
+.item1 { animation-delay: calc(var(--duration) / var(--items) * (8 - 1) * -1); }
+.item2 { animation-delay: calc(var(--duration) / var(--items) * (8 - 2) * -1); }
+.item3 { animation-delay: calc(var(--duration) / var(--items) * (8 - 3) * -1); }
+.item4 { animation-delay: calc(var(--duration) / var(--items) * (8 - 4) * -1); }
+.item5 { animation-delay: calc(var(--duration) / var(--items) * (8 - 5) * -1); }
+.item6 { animation-delay: calc(var(--duration) / var(--items) * (8 - 6) * -1); }
+.item7 { animation-delay: calc(var(--duration) / var(--items) * (8 - 7) * -1); }
+.item8 { animation-delay: calc(var(--duration) / var(--items) * (8 - 8) * -1); }

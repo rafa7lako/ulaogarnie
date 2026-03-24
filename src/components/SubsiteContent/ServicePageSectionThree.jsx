@@ -1,15 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import './ServicePageSectionThree.css'
+import { SectionHeader } from "../SectionHeader";
 
 export const ServicePageSectionThree = ({ title, text, phone, email, img }) => {
 	return (
 		<section className="sectionThree">
-			<div className="flexRow">
-				<div className="fadeLine fadeLineLeftDark"></div>
-				<h2 className="headingThree">{title}</h2>
-				<div className="fadeLine fadeLineRightDark"></div>
-			</div>
+			<SectionHeader title={title} theme="dark" />
 
 			<div className="contactSubsectionContaner">
 				<div>
