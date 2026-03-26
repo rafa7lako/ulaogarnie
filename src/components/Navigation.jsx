@@ -1,25 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import ulaogarnieLogo from "../assets/ulaogarnieLogo.svg";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
 
-
 const Navigation = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleMenu = () => setIsOpen(!isOpen);
+	const closeMenu = () => setIsOpen(false);
+
 	return (
 		<nav className="navigation">
-			<div className="navElement">
-				<Link to="/garden">pielęgnacja ogrodu</Link>
-				<Link to="/memorial">opieka nad miejscami pamięci</Link>
-				<Link to="/senior">pomoc seniorom</Link>
+			{/* TOP ROW (logo + burger on mobile) */}
+			<div className="navTop">
+				<div className="navElementLogo">
+					<Link to="/home" onClick={closeMenu}>
+						<img src={ulaogarnieLogo} alt="logo ulaogarnia.pl" />
+					</Link>
+				</div>
+
+				<button className="burger" onClick={toggleMenu}>
+					<span className={isOpen ? "open" : ""}></span>
+					<span className={isOpen ? "open" : ""}></span>
+					<span className={isOpen ? "open" : ""}></span>
+				</button>
 			</div>
-			<div className="navElementLogo">
-				<Link to="/home"><img src={ulaogarnieLogo} alt="logo ulaogarnia.pl" /></Link>
-				
-			</div>
-			<div className="navElement">
-				<Link>o mnie</Link>
-				<Link>cennik</Link>
-				<Link>kontakt</Link>
+
+			{/* MENU */}
+			<div className={`navMenu ${isOpen ? "active" : ""}`}>
+				<div className="navElement">
+					<Link to="/garden" onClick={closeMenu} className="navElementItem">
+						pielęgnacja ogrodu
+					</Link>
+					<Link to="/memorial" onClick={closeMenu} className="navElementItem">
+						opieka nad pomnikami
+					</Link>
+					<Link to="/senior" onClick={closeMenu} className="navElementItem">
+						pomoc seniorom
+					</Link>
+					<Link onClick={closeMenu} className="navElementItem">
+						o mnie
+					</Link>
+					<Link onClick={closeMenu} className="navElementItem">
+						cennik
+					</Link>
+				</div>
+
+				<div className="navCta">
+					<Link onClick={closeMenu} className="navElementItem buttonCtaNav">
+						kontakt
+					</Link>
+				</div>
 			</div>
 		</nav>
 	);

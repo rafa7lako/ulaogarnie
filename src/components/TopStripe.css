@@ -1,53 +1,100 @@
 .topStripe {
-	height: 35px;
-	width: 100%;
-	background: #026438;
-	display: flex;
-	align-items: center;
+    height: 35px;
+    width: 100%;
+    background: #026438;
+    display: flex;
+    align-items: center;
 }
 
 .wrapper {
-	width: 100%;
-	position: relative;
-	height: 100%;
-	overflow: hidden;
-
-	/* opcjonalny fade */
-	mask-image: linear-gradient(
-		to right,
-		transparent,
-		black 15%,
-		black 85%,
-		transparent
-	);
+    --duration: 48s;
+    --items: 8;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 15%,
+        black 85%,
+        transparent
+    );
 }
 
-/* 🔥 RUCH W PRAWO */
 @keyframes scrollRight {
-	to {
-		left: 100%;
-	}
+    from { left: 100%; }
+    to   { left: -30%; }
 }
 
 .item {
-	position: absolute;
-	left: -300px; /* start poza ekranem z lewej */
-	height: 100%;
-	display: flex;
-	align-items: center;
-	color: rgba(255, 255, 255, 0.768);
-	white-space: nowrap;
-	font-size: 14px;
-
-	animation: scrollRight var(--duration) linear infinite;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.768);
+    white-space: nowrap;
+    font-size: 14px;
+    animation: scrollRight var(--duration) linear infinite;
 }
 
-/* 🔧 równy spacing w czasie */
-.item1 { animation-delay: calc(var(--duration) / var(--items) * (8 - 1) * -1); }
-.item2 { animation-delay: calc(var(--duration) / var(--items) * (8 - 2) * -1); }
-.item3 { animation-delay: calc(var(--duration) / var(--items) * (8 - 3) * -1); }
-.item4 { animation-delay: calc(var(--duration) / var(--items) * (8 - 4) * -1); }
-.item5 { animation-delay: calc(var(--duration) / var(--items) * (8 - 5) * -1); }
-.item6 { animation-delay: calc(var(--duration) / var(--items) * (8 - 6) * -1); }
-.item7 { animation-delay: calc(var(--duration) / var(--items) * (8 - 7) * -1); }
-.item8 { animation-delay: calc(var(--duration) / var(--items) * (8 - 8) * -1); }
+.item1 { animation-delay: calc(var(--duration) / var(--items) * 0 * -1); }
+.item2 { animation-delay: calc(var(--duration) / var(--items) * 1 * -1); }
+.item3 { animation-delay: calc(var(--duration) / var(--items) * 2 * -1); }
+.item4 { animation-delay: calc(var(--duration) / var(--items) * 3 * -1); }
+.item5 { animation-delay: calc(var(--duration) / var(--items) * 4 * -1); }
+.item6 { animation-delay: calc(var(--duration) / var(--items) * 5 * -1); }
+.item7 { animation-delay: calc(var(--duration) / var(--items) * 6 * -1); }
+.item8 { animation-delay: calc(var(--duration) / var(--items) * 7 * -1); }
+
+/* ================= TABLET (≤1024px) ================= */
+@media (max-width: 1024px) {
+    .wrapper {
+        --duration: 32s;
+        --items: 6;
+    }
+    .item7, .item8 {
+        display: none;
+    }
+    .item1 { animation-delay: calc(var(--duration) / var(--items) * 0 * -1); }
+    .item2 { animation-delay: calc(var(--duration) / var(--items) * 1 * -1); }
+    .item3 { animation-delay: calc(var(--duration) / var(--items) * 2 * -1); }
+    .item4 { animation-delay: calc(var(--duration) / var(--items) * 3 * -1); }
+    .item5 { animation-delay: calc(var(--duration) / var(--items) * 4 * -1); }
+    .item6 { animation-delay: calc(var(--duration) / var(--items) * 5 * -1); }
+}
+
+/* ================= MOBILE (≤768px) ================= */
+@media (max-width: 768px) {
+    .topStripe {
+        height: 28px;
+    }
+    .wrapper {
+        --duration: 22s;
+        --items: 4;
+        mask-image: none;
+    }
+    .item {
+        font-size: 12px;
+    }
+    .item5, .item6, .item7, .item8 {
+        display: none;
+    }
+    .item1 { animation-delay: calc(var(--duration) / var(--items) * 0 * -1); }
+    .item2 { animation-delay: calc(var(--duration) / var(--items) * 1 * -1); }
+    .item3 { animation-delay: calc(var(--duration) / var(--items) * 2 * -1); }
+    .item4 { animation-delay: calc(var(--duration) / var(--items) * 3 * -1); }
+}
+
+/* ================= SMALL MOBILE (≤400px) ================= */
+@media (max-width: 416px) {
+    .wrapper {
+        --duration: 14s;
+        --items: 2;
+    }
+    .item3, .item4, .item5, .item6, .item7, .item8 {
+        display: none;
+    }
+    .item1 { animation-delay: calc(var(--duration) / var(--items) * 0 * -1); }
+    .item2 { animation-delay: calc(var(--duration) / var(--items) * 1 * -1); }
+}

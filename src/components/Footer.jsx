@@ -1,7 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+	faFacebook,
+	faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
 import ulaogarnieLogo from "../assets/ulaogarnieLogo.svg";
@@ -12,8 +14,9 @@ export const Footer = () => {
 		<>
 			<footer className="footer">
 				<div className="flexRowFooter">
+					{/* Logo */}
 					<div className="footerSectionOne">
-						<Link to='/home' className="logoBbFooter flex">
+						<Link to="/home" className="logoBbFooter">
 							<img
 								className="uoLogoFooter"
 								src={ulaogarnieLogo}
@@ -21,28 +24,31 @@ export const Footer = () => {
 							/>
 						</Link>
 					</div>
+
+					{/* Contact */}
 					<div className="footerSectionTwo">
-						<div className="flex">
-							<div className="fadeLineFoot fadeLineLeftFoot"></div>
+						<div className="footerHeadingRow">
+							<div className="fadeLineFoot fadeLineLeftFoot" />
 							<h3 className="headerThree">Kontakt</h3>
-							<div className="fadeLineFoot fadeLineRightFoot"></div>
+							<div className="fadeLineFoot fadeLineRightFoot" />
 						</div>
-						<div className="flex footerSectionTwoB">
-							<div className="flex">
+
+						<div className="footerSectionTwoB">
+							<div className="footerContactRow">
 								<FontAwesomeIcon
 									className="iconGeneral contactIcon"
 									icon={faPhone}
 								/>
 								<p>+48 725 116 511</p>
 							</div>
-							<div className="flex">
+							<div className="footerContactRow">
 								<FontAwesomeIcon
 									className="iconGeneral contactIcon"
 									icon={faEnvelope}
 								/>
 								<p>u.jendral@gmail.com</p>
 							</div>
-							<div>
+							<div className="footerSocialRow">
 								<FontAwesomeIcon
 									className="iconGeneral smIcon"
 									icon={faFacebook}
@@ -56,6 +62,7 @@ export const Footer = () => {
 					</div>
 				</div>
 			</footer>
+
 			<div className="footerStrip flex">
 				<p>@2026</p>
 			</div>

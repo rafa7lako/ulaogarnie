@@ -11,8 +11,16 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	--duration: 48s; /* zmieniasz tylko to */
+	/*For the topStripe text animation*/
+	--duration: 48s; 
 	--items: 8;
+
+	/*colors*/
+	--green: #026438;
+	--orange: #F7CB6C;
+	--brown: #452001;
+	--bgLight: #faf6f3;
+
 }
 
 ul {
@@ -70,11 +78,35 @@ button:focus-visible {
 }
 
 .container {
+	
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.navContainer {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: var(--bgLight);
+
+	box-shadow:
+		inset 0 4px 10px rgba(255, 255, 255, 0.15),
+		inset 0 -6px 12px rgba(0, 0, 0, 0.08),
+		0 -10px 20px rgba(0, 0, 0, 0.12),
+		0 -2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.navContainer::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: url('./assets/64507.jpg') center/cover no-repeat;
+	opacity: 0.08; /* control strength */
+	pointer-events: none;
+
 }
 
 
