@@ -13,7 +13,7 @@ const gardenData = {
 		bgImage: heroImage,
 		title: "Zieleń, którą chce się oglądać",
 		subText:
-			"Nie masz czasu na regularne koszenie? Trawnik stracił formę? Rabaty wymagają uporządkowania? Ula Ogarnie.",
+			"Nie masz czasu na koszenie? Trawnik zarasta, a rabaty wymagają opieki? Spokojnie — Ula ogarnie.",
 	},
 	sections: [
 		{
@@ -21,20 +21,20 @@ const gardenData = {
 			type: "one",
 			title: "Oferta",
 			img: sectionOneImg,
-			heading: "Oferuję kompleksową pielęgnację...",
+			heading: "Oferuję kompleksową pielęgnację ogrodu:",
 			list: [
 				"koszenie trawników",
-				"nawożenie",
-				"przycinanie",
+				"nawożenie roślin",
+				"przycinanie krzewów i drzew",
 				"nasadzenia",
-				"porządki",
+				"porządkowanie terenu/wywóz bio odpadów po pracy",
 			],
 		},
 		{
 			id: "section-offer-cont",
 			type: "two",
 			title: "Zielono. Równo. Na czas.",
-			text: "Pracuję terminowo, dokładnie i bez chaosu. Każde zlecenie wyceniam uczciwie i indywidualnie.",
+			text: "Nie wszystko trzeba robić samodzielnie. Wystarczy mieć zaufaną osobę, która pomoże. Pracuję terminowo, dokładnie i bez chaosu. Każde zlecenie wyceniam uczciwie i indywidualnie.",
 			images: [sectionOneImg, sectionTwoImg1, sectionTwoImg2],
 		},
 		{

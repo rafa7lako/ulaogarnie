@@ -23,9 +23,9 @@ const memorialData = {
 			heading: "Oferuję:",
 			list: [
 				"sprzątanie i czyszczenie nagrobków",
-				"usuwanie chwastów",
-				"sezonowe kwiaty i kompozycje",
-				"przygotowanie grobu przed świętami",
+				"usuwanie chwastów i pielęgnację otoczenia",
+				"nasadzenia kwiatów sezonowych i całorocznych",
+				"przygotowanie grobu przed świętami i ważnymi rocznicami",
 				"raport zdjęciowy po każdej wizycie",
 			],
 		},

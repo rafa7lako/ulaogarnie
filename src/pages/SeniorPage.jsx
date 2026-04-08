@@ -13,7 +13,7 @@ const seniorData = {
 		bgImage: heroImage,
 		title: "Pomoc w codziennych sprawach",
 		subText:
-			"Nie wszystko trzeba robić samemu. Czasem wystarczy ktoś zaufany, kto pomoże.",
+			"Nie wszystko trzeba robić samodzielnie. Wystarczy mieć zaufaną osobę, która pomoże.",
 	},
 	sections: [
 		{
@@ -21,20 +21,20 @@ const seniorData = {
 			type: "one",
 			title: "Oferta",
 			img: sectionOneImg,
-			heading: "Oferuję wsparcie domowe i pomoc osobom starszym:",
+			heading: "Oferuję wsparcie w domu oraz pomoc dla osób starszych:",
 			list: [
-				"sprzątanie i mycie okien",
-				"porządkowanie mieszkania",
+				"mycie okien",
+				"sprzątanie i porządkowanie mieszkań",
 				"drobne naprawy domowe",
 				"pomoc przy zakupach",
-				"organizację dokumentów",
+				"porządkowanie dokumentów",
 			],
 		},
 		{
 			id: "section-offer-cont",
 			type: "two",
 			title: "Spokojna głowa dla Ciebie i Twoich bliskich.",
-			text: "Bez pośpiechu. Bez oceniania. To nie jest opieka medyczna To zwykła, ludzka pomoc.",
+			text: "Bez pośpiechu, bez stresu. To nie opieka medyczna — to zwykła, życzliwa pomoc na co dzień. Każde zlecenie wyceniam uczciwie i indywidualnie.",
 			images: [sectionOneImg, sectionTwoImg1, sectionTwoImg2],
 		},
 		{
