@@ -1,9 +1,9 @@
 import React from "react";
 import "./SectionOne.css";
 import { ServiceCard } from "./serviceCard";
-import cardOneImg from "../assets/../assets/heroAlternative.png";
-import cardTwoImg from "../assets/../assets/friedhoff.png";
-import cardThreeImg from "../assets/../assets/granmaRoom.png";
+import cardOneImg from "../assets/../assets/heroAlternative.jpg";
+import cardTwoImg from "../assets/../assets/friedhoff.jpg";
+import cardThreeImg from "../assets/../assets/granmaRoom.jpg";
 import { SectionHeader } from "./SectionHeader";
 
 export const SectionOne = () => {

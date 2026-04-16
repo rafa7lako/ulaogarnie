@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-import sectionOneImg from "../assets/garden-imgs/garden__img-one.jpeg";
+import sectionOneImg from "../assets/senior-imgs/senior-thumbsup.jpg";
 import sectionTwoImg1 from "../assets/garden-imgs/garden__img-two.jpeg";
 import sectionTwoImg2 from "../assets/garden-imgs/garden__img-three.jpeg";
 import contactWomanImg from "../assets/contactWomanImg.png";
 import { ServicePage } from "../components/SubsiteContent/ServicePage.jsx";
-import heroImage from "../assets/granmaRoom.png";
+import heroImage from "../assets/granmaRoom.jpg";
 
 const seniorData = {
 	headerSection: {

@@ -38,16 +38,17 @@ const Navigation = () => {
 					<Link to="/senior" onClick={closeMenu} className="navElementItem">
 						pomoc seniorom
 					</Link>
-					<Link onClick={closeMenu} className="navElementItem">
+					<Link to={"/about"} onClick={closeMenu} className="navElementItem">
 						o mnie
-					</Link>
-					<Link onClick={closeMenu} className="navElementItem">
-						cennik
 					</Link>
 				</div>
 
 				<div className="navCta">
-					<Link onClick={closeMenu} className="navElementItem buttonCtaNav">
+					<Link
+						to="/contact"
+						onClick={closeMenu}
+						className="navElementItem buttonCtaNav"
+					>
 						kontakt
 					</Link>
 				</div>

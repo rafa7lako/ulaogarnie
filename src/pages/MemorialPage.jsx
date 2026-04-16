@@ -6,7 +6,7 @@ import sectionTwoImg2 from "../assets/memorial-imgs/memorial__img-three.jpg";
 import sectionTwoImg3 from "../assets/memorial-imgs/memorial__img-four.jpg";
 import contactWomanImg from "../assets/contactWomanImg.png";
 import { ServicePage } from "../components/SubsiteContent/ServicePage.jsx";
-import heroImage from "../assets/friedhoff.png";
+import heroImage from "../assets/friedhoff.jpg";
 
 const memorialData = {
 	headerSection: {

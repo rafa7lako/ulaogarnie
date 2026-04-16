@@ -6,7 +6,7 @@ import sectionTwoImg1 from "../assets/garden-imgs/garden__img-two.jpeg";
 import sectionTwoImg2 from "../assets/garden-imgs/garden__img-three.jpeg";
 import contactWomanImg from "../assets/contactWomanImg.png";
 import { ServicePage } from "../components/SubsiteContent/ServicePage.jsx";
-import heroImage from "../assets/heroAlternative.png";
+import heroImage from "../assets/heroAlternative.jpg";
 
 const gardenData = {
 	headerSection: {

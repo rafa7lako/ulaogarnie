@@ -1,0 +1,37 @@
+.sectionOne__sub {
+	padding: 0 32px 64px;
+	flex-direction: column;
+}
+
+.headingTwoGroup {
+	width: 80%;
+}
+
+.gardenSubsection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	/* width: 80%; */
+	text-align: left;
+}
+
+.gardenSubsection__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.sectionOneImg {
+	width: 40%;
+	border-radius: 16px;
+}
+
+.gardenSubHeadingTwo {
+	margin-top: 0;
+}
+
+.gardenSubList {
+	padding: 0;
+	margin: 0;
+}

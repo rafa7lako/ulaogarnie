@@ -6,6 +6,8 @@ import { GardenPage } from "./pages/GardenPage.jsx";
 import { MemorialPage } from "./pages/MemorialPage.jsx";
 import { SeniorPage } from "./pages/SeniorPage.jsx";
 import { LayoutMain } from "./pages/Root.jsx";
+import { AboutMePage } from "./pages/AboutMePage.jsx";
+import { ContactPage } from "./pages/ContactPage.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -15,6 +17,8 @@ const router = createBrowserRouter([
 			{ path: "/garden", element: <GardenPage /> },
 			{ path: "/memorial", element: <MemorialPage /> },
 			{ path: "/senior", element: <SeniorPage /> },
+			{ path: "/about", element: <AboutMePage /> },
+			{ path: "/contact", element: <ContactPage /> },
 		],
 	},
 	{ path: "/", element: <UnderConstruction /> }, // bez nav/footer

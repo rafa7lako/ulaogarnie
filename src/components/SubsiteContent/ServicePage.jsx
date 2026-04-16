@@ -4,28 +4,31 @@ import { ServicePageSectionThree } from "./ServicePageSectionThree.jsx";
 import React from "react";
 import "./ServicePage.css";
 import { ServicePageHeader } from "./ServicePageHeader.jsx";
+import { ServicePageAboutSection } from "./ServicePageAboutSection.jsx";
 
-export const ServicePage = ({ data }) => {
-	return (
-		<>
-			<ServicePageHeader {...data.headerSection} />
-			<main>
-				{data.sections.map((section, i) => {
-					switch (section.type) {
-						case "one":
-							return <ServicePageSectionOne key={section.id} {...section} />;
+const SECTION_MAP = {
+    one: ServicePageSectionOne,
+    two: ServicePageSectionTwo,
+    three: ServicePageSectionThree,
+    about: ServicePageAboutSection
+};
 
-						case "two":
-							return <ServicePageSectionTwo key={section.id} {...section} />;
+export const ServicePage = ({ data, visibleSections }) => {
+    const sections = visibleSections
+        ? data.sections.filter((section) => visibleSections.includes(section.type))
+        : data.sections;
 
-						case "three":
-							return <ServicePageSectionThree key={section.id} {...section} />;
-
-						default:
-							return null;
-					}
-				})}
-			</main>
-		</>
-	);
+    return (
+        <>
+            <ServicePageHeader {...data.headerSection} />
+            <main>
+                {sections.map((section) => {
+                    const SectionComponent = SECTION_MAP[section.type];
+                    return SectionComponent
+                        ? <SectionComponent key={section.id} {...section} />
+                        : null;
+                })}
+            </main>
+        </>
+    );
 };

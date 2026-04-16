@@ -14,7 +14,7 @@ export const LayoutMain = () => {
 			<div className="container navContainer">
 				<Navigation />
 			</div>
-			<Outlet /> {/* Tu będą renderowane podstrony */}
+			<Outlet /> {/* Tu są renderowane podstrony */}
 			<Footer />
 		</>
 	);
