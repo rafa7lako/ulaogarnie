@@ -1,22 +1,54 @@
+/* ── Base (mobile) ────────────────────────────────────── */
 .sectionTwo {
-	padding: 0 32px 64px;
-	background-color: #026438;
-	color: #fffffd;
+  padding: 0 16px 32px;
+  background-color: #026438;
+  color: #fffffd;
 }
 
 .subSectionTwoText {
-	margin-bottom: 48px;
+  margin-bottom: 32px;
+}
+
+.subSectionTwoImgGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .subSectionTwoImg {
-	width: 100%;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	border-radius: 8px;
-	/* cursor: pointer; */
-	transition: 0.3s;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 .subSectionTwoImg:hover {
-	transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* ── Tablet (768px+) ──────────────────────────────────── */
+@media (min-width: 768px) {
+  .sectionTwo {
+    padding: 0 24px 48px;
+  }
+
+  .subSectionTwoText {
+    margin-bottom: 40px;
+  }
+
+  .subSectionTwoImgGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* ── Desktop (1024px+) ────────────────────────────────── */
+@media (min-width: 1024px) {
+  .sectionTwo {
+    padding: 0 32px 64px;
+  }
+
+  .subSectionTwoText {
+    margin-bottom: 48px;
+  }
 }

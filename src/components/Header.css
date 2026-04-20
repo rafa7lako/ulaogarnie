@@ -1,26 +1,30 @@
+/* ── Base (mobile) ────────────────────────────────────── */
 header {
   display: flex;
   justify-content: center;
 }
 
-/* Hero section */
 .hero {
-  padding-left: 64px;
-  padding-right: 16px;
-  background: #000;
+  width: 100%;
+  min-height: 260px;
+  padding: 24px 16px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
-  align-items: flex-start;
-  width: 100vw;
-  height: 500px;
+  align-items: center;
+  gap: 10px;
   background-image:
     linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.28) 55%,
+      rgba(0, 0, 0, 0.18) 100%
+    ),
+    linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.7) 0%,
-      rgba(204, 204, 204, 0) 100%
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0.08) 70%
     ),
     url("../assets/hero.jpg");
   background-size: cover;
@@ -28,91 +32,87 @@ header {
   background-repeat: no-repeat;
 }
 
-/* Headings */
 .headerOne {
-  text-align: left;
   font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 1.25;
+  text-align: center;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
   margin: 0;
-  font-size: 48px;
-  line-height: 1.2;
 }
 
-/* CTA button */
+.hero p {
+  font-size: 17px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.55);
+  max-width: 36ch;
+  margin: 0;
+}
+
 .buttonCta {
+  margin-top: 8px;
   background-color: #F7CB6C;
   border: 2px solid #452001;
-  font-size: 20px;
-  padding: 8px 32px;
+  color: #452001;
+  font-size: 16px;
+  padding: 10px 40px;
   border-radius: 8px;
   font-family: 'Playfair Display', serif;
+  text-decoration: none;
   transition: 0.3s;
   cursor: pointer;
+  display: inline-block;
 }
 
 .buttonCta:hover {
   color: #F7CB6C;
   background-color: #452001;
-  border: 2px solid #F7CB6C;
+  border-color: #F7CB6C;
   transform: scale(0.97);
 }
 
-/* ---------------- Responsive ---------------- */
-
-/* Tablety: szerokość <= 1024px */
-@media (max-width: 1024px) {
+/* ── Tablet (768px+) ──────────────────────────────────── */
+@media (min-width: 768px) {
   .hero {
-    padding-left: 32px;
-    height: 400px;
+    min-height: 360px;
+    padding: 40px 32px;
+    align-items: flex-start;
   }
 
   .headerOne {
     font-size: 36px;
+    text-align: left;
+  }
+
+  .hero p {
+    font-size: 19px;
+    text-align: left;
   }
 
   .buttonCta {
     font-size: 18px;
-    padding: 6px 24px;
+    padding: 10px 32px;
   }
 }
 
-/* Telefony: szerokość <= 768px */
-@media (max-width: 768px) {
-	
+/* ── Desktop (1024px+) ────────────────────────────────── */
+@media (min-width: 1024px) {
   .hero {
-	align-items: center;
-    padding-left: 16px;
-    height: 300px;
-    gap: 6px;
-	 background-image:
-    linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.6) 100%,
-      rgba(204, 204, 204, 0) 100%
-    ),
-    url("../assets/hero.png");
+    min-height: 500px;
+    padding: 64px;
   }
 
   .headerOne {
-	text-align: center;
-    font-size: 28px;
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 21px;
   }
 
   .buttonCta {
-    font-size: 16px;
-    padding: 12px 56px;
+    font-size: 20px;
+    padding: 8px 32px;
   }
-}
-
-/* Małe telefony: szerokość <= 480px */
-@media (max-width: 480px) {
-  .hero {
-    padding-left: 12px;
-    padding-right: 12px;
-    height: 250px;
-    gap: 4px;
-  }
-
-
-
-
 }

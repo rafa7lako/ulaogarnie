@@ -1,63 +1,105 @@
+/* ── Base (mobile) ────────────────────────────────────── */
 .sectionThree {
-    background-color: #f7cb6c;
-    color: #452001;
-}
-.headingThree {
-    padding: 0 16px;
-    font-family: Playfair Display;
-    font-size: 36px;
-    font-weight: normal;
-}
-.subSectionFourText {
-    font-family: Playfair Display;
-    font-size: 24px;
-    font-weight: 500;
-}
-.contactSubsectionContaner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-.contactWomanImg {
-    height: 400px;
-    width: auto;
+  background-color: #f7cb6c;
+  color: #452001;
 }
 
-/* new */
+.headingThree {
+  padding: 0 8px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.subSectionFourText {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contactSubsectionContaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contactWomanImg {
+  height: auto;
+  width: 80%;
+  max-width: 300px;
+}
+
 .contactDetails {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
 }
 
 .contactDetailItem {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .contactIconWrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background-color: #452001;
-    color: #f7cb6c;
-    border-radius: 50%;
-    font-size: 14px;
-    flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #452001;
+  color: #f7cb6c;
+  border-radius: 50%;
+  font-size: 14px;
+  flex-shrink: 0;
 }
 
+/* ── Tablet (768px+) ──────────────────────────────────── */
+@media (min-width: 768px) {
+  .headingThree {
+    padding: 0 12px;
+    font-size: 30px;
+  }
+
+  .subSectionFourText {
+    font-size: 21px;
+  }
+
+  .contactWomanImg {
+    width: 60%;
+    max-width: 360px;
+  }
+
+  .contactSubsectionContaner {
+    gap: 2rem;
+  }
+}
+
+/* ── Desktop (1024px+) ────────────────────────────────── */
 @media (min-width: 1024px) {
-    .contactSubsectionContaner {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-    }
+  .headingThree {
+    padding: 0 16px;
+    font-size: 36px;
+  }
+
+  .subSectionFourText {
+    font-size: 24px;
+  }
+
+  .contactSubsectionContaner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .contactWomanImg {
+    height: 400px;
+    width: auto;
+    max-width: none;
+  }
 }

@@ -1,61 +1,35 @@
-/* Sekcja główna */
+/* ── Base (mobile) ────────────────────────────────────── */
 .sectionOne {
-  padding: 0 32px 64px;
+  padding: 0 12px 24px;
 }
 
-
-
-/* Karty usług */
 .cardsServices {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  /* flex-wrap: wrap;  */
+  gap: 1rem;
 }
 
-/* ---------------- Responsive ---------------- */
-
-/* Tablety: szerokość <= 1024px */
-@media (max-width: 1024px) {
+/* ── Tablet (768px+) ──────────────────────────────────── */
+@media (min-width: 768px) {
   .sectionOne {
     padding: 0 24px 48px;
   }
 
-  
-
-
-
   .cardsServices {
+    flex-direction: row;
     gap: 1.5rem;
   }
 }
 
-/* Telefony: szerokość <= 768px */
-@media (max-width: 768px) {
+/* ── Desktop (1024px+) ────────────────────────────────── */
+@media (min-width: 1024px) {
   .sectionOne {
-    padding: 0 16px 32px;
+    padding: 0 32px 64px;
   }
-
-
-
-
 
   .cardsServices {
-    gap: 1rem;
-  }
-}
-
-/* Małe telefony: szerokość <= 480px */
-@media (max-width: 480px) {
-  .sectionOne {
-    padding: 0 12px 24px;
-  }
-
-
-  .cardsServices {
-    flex-direction: column; /* karty jedna pod drugą */
-    align-items: center;  /* żeby wypełniały szerokość */
-    gap: 1rem;
+    gap: 2rem;
   }
 }

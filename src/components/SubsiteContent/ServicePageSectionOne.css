@@ -1,37 +1,73 @@
+/* ── Base (mobile) ────────────────────────────────────── */
 .sectionOne__sub {
-	padding: 0 32px 64px;
-	flex-direction: column;
+  padding: 0 16px 32px;
+  flex-direction: column;
 }
 
 .headingTwoGroup {
-	width: 80%;
+  width: 100%;
 }
 
 .gardenSubsection {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 3rem;
-	/* width: 80%; */
-	text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
 }
 
 .gardenSubsection__text {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .sectionOneImg {
-	width: 40%;
-	border-radius: 16px;
+  width: 100%;
+  border-radius: 16px;
 }
 
 .gardenSubHeadingTwo {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .gardenSubList {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* ── Tablet (768px+) ──────────────────────────────────── */
+@media (min-width: 768px) {
+  .sectionOne__sub {
+    padding: 0 24px 48px;
+  }
+
+  .headingTwoGroup {
+    width: 80%;
+  }
+
+  .gardenSubsection {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .sectionOneImg {
+    width: 50%;
+  }
+}
+
+/* ── Desktop (1024px+) ────────────────────────────────── */
+@media (min-width: 1024px) {
+  .sectionOne__sub {
+    padding: 0 32px 64px;
+  }
+
+  .gardenSubsection {
+    gap: 3rem;
+  }
+
+  .sectionOneImg {
+    width: 40%;
+  }
 }
