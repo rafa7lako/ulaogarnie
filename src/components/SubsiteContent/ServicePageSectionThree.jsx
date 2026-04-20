@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import './ServicePageSectionThree.css'
+import "./ServicePageSectionThree.css";
 import { SectionHeader } from "../SectionHeader";
 
 export const ServicePageSectionThree = ({ title, text, phone, email, img }) => {
@@ -11,16 +11,18 @@ export const ServicePageSectionThree = ({ title, text, phone, email, img }) => {
 			<div className="contactSubsectionContaner">
 				<div>
 					<p className="subSectionFourText">{text}</p>
-
-					<div className="flex footerSectionTwoB">
-						<div className="flex">
-							<FontAwesomeIcon className="iconGeneral contactIcon" icon={faPhone} />
-							<p>{phone}</p>
+					<div className="contactDetails">
+						<div className="contactDetailItem">
+							<span className="contactIconWrap">
+								<FontAwesomeIcon icon={faPhone} />
+							</span>
+							<span>{phone}</span>
 						</div>
-
-						<div className="flex">
-							<FontAwesomeIcon className="iconGeneral contactIcon" icon={faEnvelope} />
-							<p>{email}</p>
+						<div className="contactDetailItem">
+							<span className="contactIconWrap">
+								<FontAwesomeIcon icon={faEnvelope} />
+							</span>
+							<span>{email}</span>
 						</div>
 					</div>
 				</div>

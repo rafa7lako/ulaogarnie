@@ -1,9 +1,9 @@
-import React from 'react'
-
+import React from "react";
 
 import sectionOneImg from "../assets/senior-imgs/senior-thumbsup.jpg";
-import sectionTwoImg1 from "../assets/garden-imgs/garden__img-two.jpeg";
-import sectionTwoImg2 from "../assets/garden-imgs/garden__img-three.jpeg";
+import sectionTwoImg1 from "../assets/senior-imgs/floor-cleaning.jpg";
+import sectionTwoImg2 from "../assets/senior-imgs/furniture-assembly.jpg";
+import sectionTwoImg3 from "../assets/senior-imgs/shopping.jpg";
 import contactWomanImg from "../assets/contactWomanImg.png";
 import { ServicePage } from "../components/SubsiteContent/ServicePage.jsx";
 import heroImage from "../assets/granmaRoom.jpg";
@@ -23,11 +23,16 @@ const seniorData = {
 			img: sectionOneImg,
 			heading: "Oferuję wsparcie w domu oraz pomoc dla osób starszych:",
 			list: [
-				"mycie okien",
-				"sprzątanie i porządkowanie mieszkań",
+				"sprzątanie mieszkań i domów",
 				"drobne naprawy domowe",
 				"pomoc przy zakupach",
-				"porządkowanie dokumentów",
+				"zmycie podłóg",
+				"ścieranie kurzu",
+				"porządki w łazience / kuchni",
+				"wymiana żarówek, drobne usługi",
+				"układanie dokumentów",
+				"skręcanie mebli",
+				"dokręcanie klamek, regulowanie drzwiczek w szafkach",
 			],
 		},
 		{
@@ -35,7 +40,7 @@ const seniorData = {
 			type: "two",
 			title: "Spokojna głowa dla Ciebie i Twoich bliskich.",
 			text: "Bez pośpiechu, bez stresu. To nie opieka medyczna — to zwykła, życzliwa pomoc na co dzień. Każde zlecenie wyceniam uczciwie i indywidualnie.",
-			images: [sectionOneImg, sectionTwoImg1, sectionTwoImg2],
+			images: [sectionTwoImg1, sectionTwoImg2, sectionTwoImg3],
 		},
 		{
 			id: "offer-contact",
@@ -50,13 +55,9 @@ const seniorData = {
 };
 
 export const SeniorPage = () => {
-  return (
-    	<>
-			
-
+	return (
+		<>
 			<ServicePage data={seniorData} />
-
-		
 		</>
-  )
-}
+	);
+};
