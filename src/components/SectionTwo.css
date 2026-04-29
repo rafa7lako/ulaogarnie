@@ -1,73 +1,73 @@
 /* ── Base (mobile) ────────────────────────────────────── */
 .sectionTwo__home {
-  padding: 0 16px 32px;
-  background-color: #026438;
-  color: #fffffd;
+	padding: 0 16px 32px;
+	background-color: #026438;
+	color: #fffffd;
 }
 
 .sectionTwoContainer__home {
-  padding-top: 16px;
-  gap: 1.5rem;
-  align-items: center;
-  flex-direction: column;
+	padding-top: 16px;
+	gap: 1.5rem;
+	align-items: center;
+	flex-direction: column;
 }
 
 .photoCollage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  width: 90%;
-  max-width: 500px;
-  flex: 1;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	width: 90%;
+	max-width: 500px;
+	flex: 1;
 }
 
 .sectionTwoImg__home {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+
+	transition: 0.3s;
 }
 
 .sectionTwoImg__home:hover {
-  scale: 1.02;
+	scale: 1.02;
 }
 
 .sectionTwoImg1 {
-  grid-column: span 3;
-  aspect-ratio: 16 / 9;
+	grid-column: span 3;
+	aspect-ratio: 16 / 9;
 }
 
 .sectionTwoImg2,
 .sectionTwoImg3,
 .sectionTwoImg4 {
-  aspect-ratio: 1 / 1;
+	aspect-ratio: 1 / 1;
 }
 
 .sectionTwoText {
-  text-align: left;
-  flex: 1.2;
-  max-width: 600px;
-  width: 90%;
+	text-align: left;
+	flex: 1.2;
+	max-width: 600px;
+	width: 90%;
 }
 
 /* ── Tablet (768px+) ──────────────────────────────────── */
 @media (min-width: 768px) {
-  .sectionTwo__home {
-    padding: 0 32px 64px;
-  }
+	.sectionTwo__home {
+		padding: 0 32px 64px;
+	}
 
-  .sectionTwoContainer__home {
-    flex-direction: row;
-    gap: 3rem;
-  }
+	.sectionTwoContainer__home {
+		flex-direction: row;
+		gap: 3rem;
+	}
 
-  .photoCollage {
-    width: 50%;
-  }
+	.photoCollage {
+		width: 50%;
+	}
 
-  .sectionTwoText {
-    width: auto;
-  }
+	.sectionTwoText {
+		width: auto;
+	}
 }

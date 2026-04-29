@@ -1,13 +1,13 @@
 import { SectionHeader } from '../SectionHeader.jsx';
 import './ServicePageSectionOne.css'
 
-export const ServicePageSectionOne = ({ title, img, heading, list }) => {
+export const ServicePageSectionOne = ({ title, img, heading, list, alt }) => {
 	return (
 		<section className="sectionOne__sub">
 			<SectionHeader title={title} theme='dark' />
 
 			<div className="flex gardenSubsection">
-				<img className="sectionOneImg" src={img} alt="" />
+				<img className="sectionOneImg" src={img} alt={alt} />
 
 				<div className="flex gardenSubsection__text">
 					<h3 className="gardenSubHeadingTwo">{heading}</h3>

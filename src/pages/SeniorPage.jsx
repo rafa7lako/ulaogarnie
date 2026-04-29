@@ -21,6 +21,7 @@ const seniorData = {
 			type: "one",
 			title: "Oferta",
 			img: sectionOneImg,
+			alt: "Ilustracja uśmiechniętego starszego mężczyzny pokazującego kciuk w górę w przytulnym, tradycyjnie urządzonym salonie z kredensem, fotelami i skrzynką narzędzi na stole.",
 			heading: "Oferuję wsparcie w domu oraz pomoc dla osób starszych:",
 			list: [
 				"sprzątanie mieszkań i domów",
@@ -41,6 +42,11 @@ const seniorData = {
 			title: "Spokojna głowa dla Ciebie i Twoich bliskich.",
 			text: "Bez pośpiechu, bez stresu. To nie opieka medyczna — to zwykła, życzliwa pomoc na co dzień. Każde zlecenie wyceniam uczciwie i indywidualnie.",
 			images: [sectionTwoImg1, sectionTwoImg2, sectionTwoImg3],
+			alts: [
+				"Mop z zieloną rączką, pomarańczowe wiadro z różową ścierką oraz butelki ze środkami czyszczącymi na podłodze z jasnych kafelków przy przeszklonej ścianie.",
+				"Dłonie montujące drewnianą ramę mebla za pomocą klucza imbusowego.",
+				"Torby bawełniane i siatka wypełnione świeżymi warzywami - porem, papryką, pomidorami, ogórkiem - oraz bagietką, ustawione na kuchennym blacie.",
+			],
 		},
 		{
 			id: "offer-contact",

@@ -27,7 +27,7 @@ export const ServicePageSectionThree = ({ title, text, phone, email, img }) => {
 					</div>
 				</div>
 
-				<img className="contactWomanImg" src={img} alt="" />
+				<img className="contactWomanImg" src={img} alt="Ilustracja kobiety w okularach rozmawiającej przez telefon, trzymającej schowek z dokumentami." />
 			</div>
 		</section>
 	);

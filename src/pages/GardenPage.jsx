@@ -21,6 +21,7 @@ const gardenData = {
 			type: "one",
 			title: "Oferta",
 			img: sectionOneImg,
+			alt: "Rabatka z różami, wiadro z chwastami i fragment trawnika.",
 			heading: "Oferuję kompleksową pielęgnację ogrodu:",
 			list: [
 				"koszenie trawników",
@@ -36,6 +37,11 @@ const gardenData = {
 			title: "Zielono. Równo. Na czas.",
 			text: "Nie wszystko trzeba robić samodzielnie. Wystarczy mieć zaufaną osobę, która pomoże. Pracuję terminowo, dokładnie i bez chaosu. Każde zlecenie wyceniam uczciwie i indywidualnie.",
 			images: [sectionOneImg, sectionTwoImg1, sectionTwoImg2],
+			alts: [
+        "Rabatka z różami, wiadro z chwastami i fragment trawnika.",
+        "Rabatka z młodymi nasadzeniami przy chodniku i trawniku.",
+        "Rabata z kwitnącymi różami w kolorze czerwieni i różu wzdłuż metalowego ogrodzenia, obok równo skoszonego trawnika.",
+    ],
 		},
 		{
 			id: "offer-contact",

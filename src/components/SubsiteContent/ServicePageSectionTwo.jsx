@@ -1,7 +1,7 @@
 import { SectionHeader } from '../SectionHeader';
 import './ServicePageSectionTwo.css'
 
-export const ServicePageSectionTwo = ({ title, text, images }) => {
+export const ServicePageSectionTwo = ({ title, text, images, alts = [] }) => {
     return (
         <section className="sectionTwo">
             <SectionHeader title={title} theme='light' />
@@ -9,7 +9,7 @@ export const ServicePageSectionTwo = ({ title, text, images }) => {
                 <p className="subSectionTwoText">{text}</p>
                 <div className="subSectionTwoImgGrid">
                     {images.map((img, i) => (
-                        <img key={i} className="subSectionTwoImg" src={img} alt="" />
+                        <img key={i} className="subSectionTwoImg" src={img}  alt={alts[i] ?? ""} />
                     ))}
                 </div>
             </div>

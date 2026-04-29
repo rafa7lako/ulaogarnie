@@ -20,6 +20,7 @@ const memorialData = {
 			type: "one",
 			title: "Oferta",
 			img: sectionOneImg,
+			alt: "Ciemny granitowy nagrobek z figurką aniołka i bukietem fioletowych kwiatów, otoczony śniegiem.",
 			heading: "Oferuję:",
 			list: [
 				"sprzątanie i czyszczenie nagrobków",
@@ -35,6 +36,11 @@ const memorialData = {
 			title: "Spokojnie. Rzetelnie. Z troską.",
 			text: "Pracuję terminowo, dokładnie i bez chaosu. Każde zlecenie wyceniam uczciwie i indywidualnie.",
 			images: [sectionTwoImg3, sectionTwoImg1, sectionTwoImg2],
+			alts: [
+				"Granitowy nagrobek ozdobiony różowymi i fioletowymi kwiatami oraz czarną latarnią na cmentarzu w słoneczny dzień.",
+				"Granitowy nagrobek z złotym krzyżem, udekorowany świątecznymi kompozycjami z gwiazd betlejemskich, jodły i czerwonych ozdób oraz czarną latarnią.",
+				"Granitowy nagrobek z rytym krzyżem i różą, ozdobiony świątecznym stroikiem z jodły, czerwonych kulek i szyszek, pokryty śniegiem.",
+			],
 		},
 		{
 			id: "offer-contact",

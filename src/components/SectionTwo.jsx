@@ -2,6 +2,8 @@ import React from "react";
 import "./SectionTwo.css";
 import imgOne from '../assets/garden-imgs/garden__img-one.jpeg'
 import imgTwo from '../assets/garden-imgs/garden__img-two.jpeg'
+import imgThree from '../assets/memorial-imgs/memorial__img-three.jpg'
+import imgFour from '../assets/senior-imgs/floor-cleaning.jpg'
 import { SectionHeader } from "./SectionHeader";
 
 export const SectionTwo = () => {
@@ -10,10 +12,12 @@ export const SectionTwo = () => {
 			<SectionHeader title="Doświadczenie" theme="light" />
 			<div className="sectionTwoContainer__home flex">
 				<div className="photoCollage">
-          <img className="sectionTwoImg__home sectionTwoImg1" src={imgOne} alt="" />
-          <img className="sectionTwoImg__home sectionTwoImg2" src={imgTwo} alt="" />
-          <img className="sectionTwoImg__home sectionTwoImg3" src={imgTwo} alt="" />
-          <img className="sectionTwoImg__home sectionTwoImg4" src={imgTwo} alt="" />
+          <img className="sectionTwoImg__home sectionTwoImg1" src={imgOne} alt="Rabatka z różami, wiadro z chwastami i fragment trawnika." />
+          <img className="sectionTwoImg__home sectionTwoImg2" src={imgTwo} alt="Rabatka z młodymi nasadzeniami przy chodniku i trawniku.
+" />
+          <img className="sectionTwoImg__home sectionTwoImg3" src={imgThree} alt="Nagrobek z dekoracją świąteczną na ośnieżonym cmentarzu.
+" />
+          <img className="sectionTwoImg__home sectionTwoImg4" src={imgFour} alt="Mop z zieloną rączką, pomarańczowe wiadro z różową ścierką oraz butelki ze środkami czyszczącymi na podłodze z jasnych kafelków przy przeszklonej ścianie." />
         </div>
 				<div className="sectionTwoText">
 					<p>
