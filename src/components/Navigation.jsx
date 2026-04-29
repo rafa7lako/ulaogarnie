@@ -14,7 +14,7 @@ const Navigation = () => {
 			{/* TOP ROW (logo + burger on mobile) */}
 			<div className="navTop">
 				<div className="navElementLogo">
-					<Link to="/home" onClick={closeMenu}>
+					<Link to="/" onClick={closeMenu}>
 						<img src={ulaogarnieLogo} alt="logo ulaogarnia.pl" />
 					</Link>
 				</div>

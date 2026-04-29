@@ -16,7 +16,7 @@ export const Footer = () => {
 				<div className="flexRowFooter">
 					{/* Logo */}
 					<div className="footerSectionOne">
-						<Link to="/home" className="logoBbFooter">
+						<Link to="/" className="logoBbFooter">
 							<img
 								className="uoLogoFooter"
 								src={ulaogarnieLogo}
